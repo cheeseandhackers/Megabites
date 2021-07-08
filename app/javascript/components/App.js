@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Home from "./assets/pages/Home";
+import Header from "./assets/Header"
+import Footer from "./assets/Footer"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 class App extends React.Component {
   render() {
@@ -21,9 +23,12 @@ class App extends React.Component {
           />
           <Switch>
             <Route exact path="/" component={Home} />
-            <h1>Milk Hands!</h1>
           </Switch>
+          <Footer />
         </Router>
+        
+
+        
       </>
     );
   }
