@@ -9,13 +9,34 @@ import RecipeEdit from './pages/RecipeEdit'
 import NotFound from './pages/NotFound'
 import UserRecipes from './pages/UserRecipes'
 import AboutUs from './pages/AboutUs'
+import mockSeeds from './pages/mockSeeds'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-     
+     recipes: []
     }
+  }
+  componentDidMount(){
+    this.recipeIndex()
+    }
+  recipeIndex = () =>{
+    fetch("/recipes")
+    .then(response => response.json())
+    .then(recipeArray => this.setState({recipes: recipeArray}))
+    .catch(errors => console.log("index errors:", errors))
+  }
+  deleteRecipe = (id) => {
+    fetch(`/recipes/${id}`, {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "DELETE"
+    })
+    .then(response => response.json)
+    .then(payload => this.recipeIndex())
+    .catch(errors => console.log("update errors", errors))
   }
   render() {
     const {
@@ -35,9 +56,11 @@ class App extends React.Component {
           />
           <Switch>
             <Route exact path="/" component={ Home } />
-            <Route path="/recipeindex" component={ RecipeIndex } />
+            <Route path="/recipeindex" render={ (props) => <RecipeIndex recipe={ this.state.recipes } />} />
             <Route path="/recipeedit" component={ RecipeEdit } />
-            <Route path="/recipeshow" component={ RecipeShow } />
+            <Route path="/recipeshow/:id" render={ (props) => { let id = props.match.params.id
+            let recipe = this.state.recipes.find(recipe => recipe.id === +id)
+            return <RecipeShow recipe={ recipe } /> }} />
             <Route path="/userrecipes" component={ UserRecipes } />
              <Route path="/aboutus" component={ AboutUs } />
             <Route component={ NotFound } />
