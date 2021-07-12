@@ -6,11 +6,25 @@ class RecipeIndex extends Component {
   render(){
     let { recipe } = this.props
     return (
-	<>
-
-      <h1>Hello World.</h1>
-
-	</>
+	  <>
+    <h2>Recipes to Explore</h2>
+    <Col id="form">
+        { recipe.map(recipe => {
+        return (
+        <Card body key={ recipe.id }>
+          <CardTitle>
+            <NavLink to={`/recipeshow/${recipe.id}`}>
+            <h4>{ recipe.title }</h4>
+            </NavLink>
+          </CardTitle>
+        </Card>
+        )
+        })}
+        <NavLink to ="/">
+          <Button id = "home-button" color="success">Home</Button>      
+        </NavLink>
+      </Col>
+	  </>
     )
   }
 }

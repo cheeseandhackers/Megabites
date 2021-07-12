@@ -1,5 +1,6 @@
-recipes = [
+let recipes = [
 {
+id: 1,
 title:"Gluten Free Spaghetti & Meatballs",
 image:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3423132.jpg",
 ingredients: "1 (12 ounce) box Barilla® Gluten Free Spaghetti, ½ pound ground beef 1 slice gluten free bread ⅓ cup milk Salt and black pepper to taste 1 egg yolk ½ cup grated Parmigiano Reggiano cheese.",
@@ -9,6 +10,7 @@ cooking_minutes: 15,
 diet_type: "Gluten Free"
 },   
 {
+id: 2,
 title:"Gluten-Free Onion Topping",
 image:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2223337.jpg",
 ingredients: "rice flour,  2 tablespoons cornmeal, 1/2 teaspoon salt, 2 large onions, halved and cut into short strips",
@@ -18,6 +20,7 @@ cooking_minutes: 30,
 diet_type: "Gluten Free"
 },
 {
+id: 3,
 title:"Gluten-Free Impossibly Easy Breakfast Bake",
 image:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7868408.jpg",
 ingredients: "1 (16 ounce) package bulk pork sausage, 1 medium red bell pepper, chopped1 medium onion, chopped3 cups frozen hash brown potatoes2 cups shredded Cheddar cheese¾ cup Bisquick™ Gluten Free mix2 cups milk¼ teaspoon pepper",
@@ -27,6 +30,7 @@ cooking_minutes: 35,
 diet_type: "Gluten Free"
 },
 {
+id: 4,
 title: "Emily's Gluten-Free Pizza Crust",
 image:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7756941.jpg",
 ingredients: "½ cup almond milk, 2 large eggs , 2 tablespoons olive oil , ¾ cup rice flour, ⅓ cup tapioca flour, 1 teaspoon xanthan gum, 1 teaspoon salt, 1 teaspoon ground black pepper.",
@@ -36,6 +40,7 @@ cooking_minutes: 30,
 diet_type: "Gluten Free"
 },
 {
+id: 5,
 title: "Gluten-Free Spicy Breakfast Casserole",
 image:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1114078.jpg",
 ingredients: "1 teaspoon oil, or as needed, 1 medium onion, diced, 1 red bell pepper, diced, 1 pound chorizo sausage, 8 eggs , 2 cups milk, ½ teaspoon ground mustard, salt and ground black pepper to taste, 2 cups shredded Cheddar cheese, divided, 1 (16 ounce) package frozen hash brown potatoes, thawed",
@@ -45,6 +50,7 @@ cooking_minutes: 60,
 diet_type: "Gluten Free"
 },
 {
+id: 6,
 title: "Vegan Zucchini Noodles with Chickpeas and Zucchini Blossoms",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5310531.jpg",
 ingredients: "4 tablespoons olive oil, 2 cloves garlic, 2 medium zucchinis, 12 zucchini blossoms, 1/2 cup canned chickpeas, 1 pinch of salt to taste, 6 basil leaves.",
@@ -54,6 +60,7 @@ cooking_minutes: 15,
 diet_type: "Vegan"
 },
 {
+id: 7,
 title: "Vegan Pancakes",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2682199.jpg",
 ingredients: "1/4 cup all-purpose flour, 2 tablespoons white sugar, 2 teaspoons baking powder, 1/2 teaspoon salt, 1/4 cup water, 1 tablespoon cooking oil.",
@@ -63,6 +70,7 @@ cooking_minutes: 10,
 diet_type: "Vegan"
 },
 {
+id: 8,
 title: "Briam (Greek Baked Zucchini and Potatoes)",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4549860.jpg",
 ingredients: "4 large zucchini, 2 pounds potatoes, 4 small red onions, 6 ripe tomatoes, 1/2 cup olive oil, 2 tablespoons parsley, salt and pepper to taste.",
@@ -72,6 +80,7 @@ cooking_minutes: 90,
 diet_type: "Vegan"
 },
 {
+id: 9,
 title: "Vegan Lasagna",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4547703.jpg",
 ingredients: "2 tablespoons olive oil, 1/2 cup chopped brown onion, 5 tablespoons minced garlic, 4 14.5 ounce cans stewed tomatoes, 1/3 cup tomato paste, 1/3 cup fresh basil, 1/2 cup chopped parsley, 1 teaspoon salt, i teaspoon black pepper, 16 ounce package lasagna noodles, 2 pounds, firm tofu, (3) 10 ounce package frozen spinach.",
@@ -81,6 +90,7 @@ cooking_minutes: 120,
 diet_type: "Vegan"
 },
 {
+id: 10,
 title: "Vegan Chocolate Cake",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4525746.jpg",
 ingredients: "1/2 cup all-purpose flour, 1 cup white sugar, 1/4 cup cocoa powder, 1 teaspoon baking soda, 1/2 teaspoon salt, 1/3 cup vegetable oil, 1 teaspoon vanilla extract, 1 teaspoon white vineagr, 1 cup water.",
@@ -90,24 +100,27 @@ cooking_minutes: 45,
 diet_type: "Vegan"
 },
 {   
+id: 11,
 title: "Mediterranean Summer Tomatoes",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F229536.jpg",
 ingredients: "5 medium whole fresh tomatoes, french bread loaf, balsamic vinegar, half cup olive oil, 5 each shallots, coarsely chopped",
 instructions: "Core and slice the tomatoes, and arrange them in a serving dish. Sprinkle the shallots over the tomatoes. Whisk the olive oil and balsamic vinegar together with a fork, then pour over the tomatoes. Let stand for 5 minutes before serving, or refrigerate, covered, for up to 3 days. Eat with French bread, and dip the bread in the marinade when finished with the tomatoes.",
 ready_in_minutes: 15,
 cooking_minutes: 6,
-diet_type: "Mediterranean."
+diet_type: "Mediterranean"
 },
 {
+id: 12,
 title: "Mediterranean Pasta",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F683300.jpg",
 ingredients: "1 (8 ounce) package linguine pasta, 3 slices bacon, 1 pound boneless chicken breast half, cooked and diced, salt, 1 (14.5 ounce) can peeled and diced tomatoes with juice, ¼ teaspoon dried rosemary, 1/3 cup crumbled feta cheese, 2/3 cup pitted black olives, 1 (6 oz) can drained artichoke hearts",
  instructions: "Bring a large pot of lightly salted water to a boil. Add linguine and cook for 8 to 10 minutes or until al dente; drain. Place bacon in a large, deep skillet. Cook over medium-high heat until evenly brown. Drain, crumble and set aside. Season chicken with salt. Stir chicken with bacon in a large skillet or saucepan. Add tomatoes and rosemary, and simmer 20 minutes. Stir in feta cheese, olives and artichoke hearts and cook until heated through. Toss with fresh cooked pasta and serve warm. Garnished with extra feta if desired.",
  ready_in_minutes: 40,
  cooking_minutes: 30,
-diet_type: "Mediterranean."
+diet_type: "Mediterranean"
 },
 {
+id: 13,
  title: "Simple Mediterranean Cucumber Salad",
  image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8185978.jpg",
 ingredients: "3 tablespoons extra-virgin olive oil, 2 tablespoons white wine vinegar, 1 English Cucumber, thinly sliced, 4 radishes, 1 small red onion, 1 tablespeoon freeze dried dill, 1 teaspoon parsley flakes",
@@ -117,6 +130,7 @@ cooking_minutes: 2,
 diet_type: "Mediterranean"
 },
 {
+id: 14,
 title: "Mediterranean Salmon",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6614964.jpg",
 ingredients: "3 tablespoons extra-virgin olive oil, 2 tablespoons white wine vinegar, 1 English Cucumber, thinly sliced, 4 radishes, 1 small red onion, 1 tablespeoon freeze dried dill, 1 teaspoon parsley flakes",
@@ -126,6 +140,7 @@ cooking_minutes: 2,
 diet_type: "Mediterranean"
 },
 {
+id: 15,
 title: "Simple Mediterranean Cucumber Salad",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8185978.jpg",
 ingredients: "3 tablespoons extra-virgin olive oil, 2 tablespoons white wine vinegar, 1 English Cucumber, thinly sliced, 4 radishes, 1 small red onion, 1 tablespeoon freeze dried dill, 1 teaspoon parsley flakes",
@@ -135,6 +150,7 @@ cooking_minutes: 2,
 diet_type: "Mediterranean"
 },
 {
+id: 16,
 title: "Wilted Spinach",
 image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1056443.jpg",
 ingredients: "2 tablespoons balsamic vinegar, 1/4 cup extra virgin olive oil, 1 teaspoon lemon juice, 1 tablespoon bottled minced garlic, 1 pinch sea salt, 1 pinch ground black pepper, 4 ounces baby spinach, 1.5 tablespoons pine nuts",
@@ -144,6 +160,7 @@ cooking_minutes: 15,
 diet_type: "Mediterranean"
 },
 {
+id: 17,
  title: "Best-Ever Keto Mac & Cheese",
 image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190912-keto-mac-and-cheese-0116-landscape-pf-1571156502.jpg",
 ingredients: "Butter, for baking dish, 2 medium heads cauliflower, 2 tbsp. extra virgin olive oil, kosher salt, , 1 cup heavy cream, 6 ounces cream cheese, cut into cubes 4 cups shredded cheddar, 2 cups shredded mozzarella, 1 tbs. hot sauce, freshly ground black pepper. 4 ounces pork rinds, 1/4 cups freshly grated Parmesan, 1 tbsp extra-virgin olive oil, 2 tbsp. freshly chopped parsley for garnish",
@@ -153,6 +170,7 @@ instructions: "Preheat oven to 375° and butter a 9”-x-13” baking dish. In a
  diet_type: "Keto"
 },
 {
+id: 18,
 title: "Keto Taquitos",
 image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190419-ta-ketos-horizontals-113best-1558016078.jpg",
 instructions: "Preheat oven to 375° and line two baking sheets with parchment paper. In a medium skillet over medium heat, heat oil. Add onion and cook until slightly soft, 3 minutes. Add garlic and spices and cook until fragrant, 1 to 2 minutes more. Add chicken and enchilada sauce, then bring mixture to a simmer. Stir in cilantro, season with salt, and remove from heat. Make taquito shells: In a medium bowl, mix together cheeses. Divide mixture into twelve 3 ½ piles on prepared baking sheet. Bake until cheese is melty and slightly golden around the edges, about 10 minutes. Let cool 2 to 4 minutes, then peel shells off parchment. Add a small pile of chicken to each and roll tightly. Repeat until all taquitos are made. Garnish with cilantro and serve with sour cream, for dipping.",
