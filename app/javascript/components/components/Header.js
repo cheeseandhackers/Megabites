@@ -10,7 +10,7 @@ class Header extends Component{
         } = this.props
         return(
             <header id = "header">
-                <h1>Welcome to Megabites</h1>
+                <h1>Welcome to MegaBites</h1>
                 { logged_in && <a href={ sign_out_route }>Sign Out</a> }
                 {!logged_in && <a href={ sign_in_route }>Sign In</a>}
             </header>
