@@ -22,7 +22,13 @@ class App extends React.Component {
             logged_in={logged_in}
           />
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={ Home } />
+            <Route path="/recipeindex" component={ RecipeIndex } />
+            <Route path="/recipeedit" component={ RecipeEdit } />
+            <Route path="/recipeshow" component={ RecipeShow } />
+            <Route path="/userrecipes" component={ UserRecipes } />
+             <Route path="/aboutus" component={ AboutUs } />
+            <Route component={ NotFound } />
           </Switch>
           <Footer />
         </Router>
