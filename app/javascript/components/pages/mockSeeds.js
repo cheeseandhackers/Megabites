@@ -108,8 +108,8 @@ ingredients: "1 (8 ounce) package linguine pasta, 3 slices bacon, 1 pound bonele
 diet_type: "Mediterranean."
 },
 {
-title: "Simple Mediterranean Cucumber Salad",
-image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8185978.jpg",
+ title: "Simple Mediterranean Cucumber Salad",
+ image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8185978.jpg",
 ingredients: "3 tablespoons extra-virgin olive oil, 2 tablespoons white wine vinegar, 1 English Cucumber, thinly sliced, 4 radishes, 1 small red onion, 1 tablespeoon freeze dried dill, 1 teaspoon parsley flakes",
 instructions: "Combine cucumber slices, radish slices, red onion, dill, and parsley in a large bowl. Whisk olive oil, vinegar, and mustard together until smooth. Season with salt and pepper. Pour dressing over the cucumber salad. Stir until evenly coated. Serve immediately.",
 ready_in_minutes: 10,
@@ -148,9 +148,9 @@ diet_type: "Mediterranean"
 image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190912-keto-mac-and-cheese-0116-landscape-pf-1571156502.jpg",
 ingredients: "Butter, for baking dish, 2 medium heads cauliflower, 2 tbsp. extra virgin olive oil, kosher salt, , 1 cup heavy cream, 6 ounces cream cheese, cut into cubes 4 cups shredded cheddar, 2 cups shredded mozzarella, 1 tbs. hot sauce, freshly ground black pepper. 4 ounces pork rinds, 1/4 cups freshly grated Parmesan, 1 tbsp extra-virgin olive oil, 2 tbsp. freshly chopped parsley for garnish",
 instructions: "Preheat oven to 375° and butter a 9”-x-13” baking dish. In a large bowl, toss cauliflower with 2 tablespoons oil and season with salt. Spread cauliflower onto two large baking sheets and roast until tender and lightly golden, about 40 minutes.  Meanwhile, in a large pot over medium heat, heat cream. Bring up to a simmer, then decrease heat to low and stir in cheeses until melted. Remove from heat, add hot sauce if using and season with salt and pepper, then fold in roasted cauliflower. Taste and season more if needed. Transfer mixture to prepared baking dish. In a medium bowl stir to combine pork rinds, Parmesan, and oil. Sprinkle mixture in an even layer over cauliflower and cheese. Bake until golden, 15 minutes. If desired, turn oven to broil to toast topping further, about 2 minutes.  Garnish with parsley before serving.",
-ready_in_minutes: 80,
-cooking_minutes: 40,
-diet_type: "Keto"
+ ready_in_minutes: 80,
+ cooking_minutes: 40,
+ diet_type: "Keto"
 },
 {
 title: "Keto Taquitos",
@@ -162,7 +162,4 @@ cooking_minutes: 15,
 diet_type: "Keto"
 }
 ]
-recipes.each do |attributes|
-    Recipe.create attributes
-    puts "creating recipe #{attributes}"
-  end
+export default recipes

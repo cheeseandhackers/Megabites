@@ -1,10 +1,22 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Home from "./assets/pages/Home";
-import Header from "./assets/Header"
-import Footer from "./assets/Footer"
+import PropTypes from "prop-types"
+import Home from "./pages/Home"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import RecipeShow from './pages/RecipeShow'
+import RecipeIndex from './pages/RecipeIndex'
+import RecipeEdit from './pages/RecipeEdit'
+import NotFound from './pages/NotFound'
+import UserRecipes from './pages/UserRecipes'
+import AboutUs from './pages/AboutUs'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+     
+    }
+  }
   render() {
     const {
       logged_in,

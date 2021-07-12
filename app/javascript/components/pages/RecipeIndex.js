@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import { Card, CardTitle, Col, Button } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
 
-class App extends Component {
+class RecipeIndex extends Component {
   render(){
+    let { recipe } = this.props
     return (
 	<>
 
@@ -12,4 +15,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default RecipeIndex
