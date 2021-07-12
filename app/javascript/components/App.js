@@ -9,7 +9,7 @@ import RecipeEdit from './pages/RecipeEdit'
 import NotFound from './pages/NotFound'
 import UserRecipes from './pages/UserRecipes'
 import AboutUs from './pages/AboutUs'
-import mockSeeds from './pages/mockSeeds'
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 class App extends React.Component {
   constructor(props){
