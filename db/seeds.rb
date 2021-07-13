@@ -96,7 +96,7 @@ ingredients: "5 medium whole fresh tomatoes, french bread loaf, balsamic vinegar
 instructions: "Core and slice the tomatoes, and arrange them in a serving dish. Sprinkle the shallots over the tomatoes. Whisk the olive oil and balsamic vinegar together with a fork, then pour over the tomatoes. Let stand for 5 minutes before serving, or refrigerate, covered, for up to 3 days. Eat with French bread, and dip the bread in the marinade when finished with the tomatoes.",
 ready_in_minutes: 15,
 cooking_minutes: 6,
-diet_type: "Mediterranean."
+diet_type: "Mediterranean"
 },
 {
 title: "Mediterranean Pasta",
@@ -105,7 +105,7 @@ ingredients: "1 (8 ounce) package linguine pasta, 3 slices bacon, 1 pound bonele
  instructions: "Bring a large pot of lightly salted water to a boil. Add linguine and cook for 8 to 10 minutes or until al dente; drain. Place bacon in a large, deep skillet. Cook over medium-high heat until evenly brown. Drain, crumble and set aside. Season chicken with salt. Stir chicken with bacon in a large skillet or saucepan. Add tomatoes and rosemary, and simmer 20 minutes. Stir in feta cheese, olives and artichoke hearts and cook until heated through. Toss with fresh cooked pasta and serve warm. Garnished with extra feta if desired.",
  ready_in_minutes: 40,
  cooking_minutes: 30,
-diet_type: "Mediterranean."
+diet_type: "Mediterranean"
 },
 {
 title: "Simple Mediterranean Cucumber Salad",
