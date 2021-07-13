@@ -14,8 +14,6 @@ const Header = (props) => {
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
-  //class Header extends Component {
-  // render() {
   const { logged_in, sign_in_route, sign_out_route } = props;
   return (
     <div>
@@ -31,12 +29,10 @@ const Header = (props) => {
               {!logged_in && <a href={sign_in_route}>Sign In</a>}
             </NavItem>
             <NavItem>
-              <NavLink to="/components/pages/Home">Home</NavLink>
+              <NavLink to="./pages/Home">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/components/pages/RecipeIndex">
-                Diet Specific Recipes
-              </NavLink>
+              <NavLink to="./pages/RecipeIndex">Diet Specific Recipes</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -45,18 +41,3 @@ const Header = (props) => {
   );
 };
 export default Header;
-//}commented out for bug fixing.
-
-//       <header id="header">
-//         <h3>Header</h3>
-
-//         {logged_in && <a href={sign_out_route}>Sign Out</a>}
-//         {!logged_in && <a href={sign_in_route}>Sign In</a>}
-//         <br></br>
-//         {this.props.logged_in && (
-//           <NavLink to="/userrecipes"> Go to your Recipes Page!</NavLink>
-//         )}
-//       </header>
-//     );
-//   }
-// }
