@@ -1,1 +1,24 @@
 @import "bootstrap";
+
+.jumbotron{
+  background-image: url("../assets/home.jpg");
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  background-color: #F1F1F1;
+  font-family: "Gill Sans", sans-serif;
+  font-size: large;
+  padding: 10px;
+}
+.balance_diet{
+  margin-left: 5px;
+}
