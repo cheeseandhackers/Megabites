@@ -13,6 +13,9 @@ class Footer extends Component {
             <NavItem>
                 <h6 id ="copyright">&copy; 2021 Cheese and Hackers</h6>
             </NavItem>
+            <NavItem>
+              <NavLink to="aboutus">About Us</NavLink>
+            </NavItem>
         </Nav>
         </footer>    
         )    

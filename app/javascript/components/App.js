@@ -82,7 +82,7 @@ class App extends React.Component {
             let recipe = this.state.recipes.find(recipe => recipe.id === +id)
             return <RecipeShow recipe={ recipe } /> }} />
             <Route path="/userrecipes" component={ UserRecipes } />
-             <Route path="/aboutus" component={ AboutUs } />
+            <Route path="/aboutus" component={ AboutUs } />
             <Route component={ NotFound } />
           </Switch>
           <Footer />

@@ -29,10 +29,14 @@ const Header = (props) => {
               {!logged_in && <a href={sign_in_route}>Sign In</a>}
             </NavItem>
             <NavItem>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">Home Page</NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="recipeindex">Diet Specific Recipes</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="aboutus">About Us</NavLink>
+
             </NavItem>
           </Nav>
         </Collapse>

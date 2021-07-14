@@ -4,6 +4,7 @@ class NotFound extends Component {
   render(){
     return (
 	<>
+
   <img width="100%" src={ notFound }/>
 
 	</>
