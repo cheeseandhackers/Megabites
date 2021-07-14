@@ -13,8 +13,8 @@ import KetoIndex from './pages/KetoIndex'
 import GlutenIndex from './pages/GlutenIndex'
 import MedIndex from './pages/MedIndex'
 import VeganIndex from './pages/VeganIndex'
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 class App extends React.Component {
   constructor(props){
     super(props)

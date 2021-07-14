@@ -10,8 +10,9 @@ class RecipeShow extends Component {
       <Col sm="6">
         <Card body>
           <CardTitle>{ this.props.recipe.title }!</CardTitle>
-            <CardText>This is a { this.props.recipe.diet_type } diet and will take { this.props.recipe.ready_in_minutes } minutes to make. <br/> <br/> You will need these ingredients: { this.props.recipe.ingredients }.<br/> <br/>Instructions: {this.props.recipe.instructions } </CardText>
+            <CardText>This is a { this.props.recipe.diet_type } diet and will take { this.props.recipe.ready_in_minutes } minutes to make. <br/> <br/> You will need these ingredients: { this.props.recipe.ingredients }.<br/> <br/>Instructions: {this.props.recipe.instructions }</CardText>
         </Card>
+        <Button id = "add-button" color = "success">Add recipe to your Saved Recipes</Button>
       </Col>
       <NavLink to ="/recipeindex">
       <Button id = "index-button" color="success">Recipe Listings </Button>      
