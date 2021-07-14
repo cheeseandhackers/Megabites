@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import React, { useState } from "react";
 import {
   Collapse,
@@ -29,10 +29,10 @@ const Header = (props) => {
               {!logged_in && <a href={sign_in_route}>Sign In</a>}
             </NavItem>
             <NavItem>
-              <NavLink to="./pages/Home">Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="./pages/RecipeIndex">Diet Specific Recipes</NavLink>
+              <NavLink to="recipeindex">Diet Specific Recipes</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
