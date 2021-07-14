@@ -28,23 +28,17 @@ class App extends React.Component {
     .then(recipeArray => this.setState({recipes: recipeArray}))
     .catch(errors => console.log("index errors:", errors))
   }
-  userRecipes = () =>{
-    fetch("/recipes")
-    .then(response => response.json())
-    .then(userRecipeArray => this.setState({userrecipes: userRecipeArray}))
-    .catch(errors => console.log("index errors:", errors))
-  }
-  saveRecipe = (saverecipe) =>{
-    console.log(saverecipe)
-    return fetch("/recipes", {
-      body: JSON.stringify(saverecipe), 
+  
+  addRecipe = (userrecipe) =>{
+    console.log(userrecipe)
+    return fetch("/user_recipes.json", {
+      body: JSON.stringify(userrecipe), 
       headers: {
         "Content-Type": "application/json"
       },
       method: "POST"
     })
     .then(response => response.json())
-    .then(payload => this.userrecipes())
     .catch(errors => {
       console.log("create errors:", errors)
     })
@@ -63,8 +57,6 @@ class App extends React.Component {
   render() {
     const {
       logged_in,
-      current_user,
-      new_user_route,
       sign_in_route,
       sign_out_route,
     } = this.props;
@@ -82,8 +74,8 @@ class App extends React.Component {
             <Route path="/recipeedit" component={ RecipeEdit } />
             <Route path="/recipeshow/:id" render={ (props) => { let id = props.match.params.id
             let recipe = this.state.recipes.find(recipe => recipe.id === +id)
-            return <RecipeShow recipe={ recipe } saveRecipe={ this.saveRecipe } />  }} />
-            <Route path="/userrecipes" render={ (props) => <UserRecipes recipe={ this.state.userrecipes }/>} />
+            return <RecipeShow recipe={ recipe } addRecipe={ this.addRecipe } />  }} />
+            <Route path="/userrecipes" render={ (props) => <UserRecipes userrecipes={ this.state.userrecipes }/>} />
              <Route path="/aboutus" component={ AboutUs } />
             <Route component={ NotFound } />
           </Switch>
