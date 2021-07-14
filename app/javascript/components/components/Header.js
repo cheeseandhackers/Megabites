@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import React, { useState } from "react";
 import {
   Collapse,
@@ -36,6 +36,7 @@ const Header = (props) => {
             </NavItem>
             <NavItem>
               <NavLink to="aboutus">About Us</NavLink>
+
             </NavItem>
           </Nav>
         </Collapse>
