@@ -22,3 +22,26 @@
 .balance_diet{
   margin-left: 5px;
 }
+#home{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 69px;
+}
+#card{
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+#index-button{
+  margin: 10px;
+}
+.col-sm-5{
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.card-image{
+  height: 390px;
+}

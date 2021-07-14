@@ -7,8 +7,8 @@ class RecipeIndex extends Component {
     let { recipe } = this.props
     return (
 	  <>
-    <h2>Recipes to Explore</h2>
-    <Col id="form">
+    <h2>All Diet Recipes</h2>
+      <Col id="form">
         { recipe.map(recipe => {
         return (
         <Card body key={ recipe.id }>

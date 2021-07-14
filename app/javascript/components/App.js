@@ -9,7 +9,11 @@ import RecipeEdit from './pages/RecipeEdit'
 import NotFound from './pages/NotFound'
 import UserRecipes from './pages/UserRecipes'
 import AboutUs from './pages/AboutUs'
-import mockSeeds from './pages/mockSeeds'
+import KetoIndex from './pages/KetoIndex'
+import GlutenIndex from './pages/GlutenIndex'
+import MedIndex from './pages/MedIndex'
+import VeganIndex from './pages/VeganIndex'
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 class App extends React.Component {
   constructor(props){
@@ -55,6 +59,22 @@ class App extends React.Component {
             logged_in={logged_in}
           />
           <Switch>
+            <Route path="/recipe-gluten-free" render={ (props) => {
+              let glutenFree = this.state.recipes.filter(value => value.diet_type === "Gluten Free")
+              return <GlutenIndex glutenFree = { glutenFree }/>
+            }}  />
+            <Route path="/recipe-keto" render={ (props) => {
+              let keto = this.state.recipes.filter(value => value.diet_type === "Keto")
+              return <KetoIndex keto = { keto }/>
+            }}  />
+            <Route path="/recipe-med" render={ (props) => {
+              let med = this.state.recipes.filter(value => value.diet_type === "Mediterranean")
+              return <MedIndex med = { med }/>
+            }}  /> 
+            <Route path="/recipe-vegan" render={ (props) => {
+              let vegan = this.state.recipes.filter(value => value.diet_type === "Vegan")
+              return <VeganIndex vegan = { vegan }/>
+            }}  /> 
             <Route exact path="/" component={ Home } />
             <Route path="/recipeindex" render={ (props) => <RecipeIndex recipe={ this.state.recipes } />} />
             <Route path="/recipeedit" component={ RecipeEdit } />
