@@ -21,6 +21,7 @@ class UserRecipes extends Component {
   render() {
     let { userrecipes } = this.state
     return (
+
       <>
         <h1>Your Saved Recipes</h1>
         <Col sm="6">
@@ -40,6 +41,7 @@ class UserRecipes extends Component {
         <NavLink to="/recipeindex">
           <Button id="index-button" color="success">Recipe Listings </Button>
         </NavLink>
+
 
 
       </>
