@@ -12,7 +12,13 @@ import {
 const Header = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
+
+        
+        )
+    }
+}
   const toggleNavbar = () => setCollapsed(!collapsed);
+
 
   const { logged_in, sign_in_route, sign_out_route } = props;
   return (
