@@ -14,9 +14,7 @@ const Header = (props) => {
 
 
         
-        )
-    }
-}
+   
   const toggleNavbar = () => setCollapsed(!collapsed);
 
 
@@ -43,6 +41,9 @@ const Header = (props) => {
             <NavItem>
               <NavLink to="aboutus">About Us</NavLink>
 
+            </NavItem>
+            <NavItem>
+              {logged_in && <NavLink to="/userrecipes">My Saved Recipes</NavLink>}
             </NavItem>
           </Nav>
         </Collapse>

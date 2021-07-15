@@ -95,8 +95,8 @@ class App extends React.Component {
             <Route path="/recipeshow/:id" render={ (props) => { let id = props.match.params.id
             let recipe = this.state.recipes.find(recipe => recipe.id === +id)
 
-            return <RecipeShow recipe={ recipe } addRecipe={ this.addRecipe } />  }} />
-            <Route path="/userrecipes" render={ (props) => <UserRecipes userrecipes={ this.state.userrecipes }/>} />
+            return <RecipeShow recipe={ recipe } addRecipe={ this.addRecipe } logged_in={logged_in}/>  }} />
+            {logged_in && <Route path="/userrecipes" render={ (props) => <UserRecipes userrecipes={ this.state.userrecipes }/>} />}
              <Route path="/aboutus" component={ AboutUs } />
 
             <Route component={ NotFound } />
