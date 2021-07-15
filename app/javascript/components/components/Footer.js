@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 class Footer extends Component {
     render () {
         return(
-        <div id ="footer">
+        <footer id ="footer">
         <Nav>
             <NavItem>
                 <NavLink className="footer-link" to="/">Home Page</NavLink>
@@ -17,7 +17,7 @@ class Footer extends Component {
               <NavLink className="footer-link" to="aboutus">About Us</NavLink>
             </NavItem>
         </Nav>
-        </div>    
+        </footer>    
         )    
     }
 }
