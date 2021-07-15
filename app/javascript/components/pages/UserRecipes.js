@@ -14,7 +14,6 @@ class UserRecipes extends Component {
   }
 
   handleSubmit = (e, userRecipeId) => {
-    console.log(e, userRecipeId)
     e.preventDefault()
     this.removeRecipe(userRecipeId)
 
