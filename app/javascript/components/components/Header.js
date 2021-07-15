@@ -43,7 +43,7 @@ const Header = (props) => {
 
             </NavItem>
             <NavItem>
-            {logged_in && <NavLink to="/userrecipes">My Saved Recipes</NavLink>}
+              {logged_in && <NavLink to="/userrecipes">My Saved Recipes</NavLink>}
             </NavItem>
           </Nav>
         </Collapse>
