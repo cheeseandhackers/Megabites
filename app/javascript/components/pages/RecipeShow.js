@@ -14,9 +14,8 @@ class RecipeShow extends Component {
   
   handleSubmit = (e) => {
     e.preventDefault()
-    console.log(this.props)
     this.props.addRecipe(this.props.recipe)
-    // this.setState({ userrecipes: userrecipes})
+
   }
   
   
