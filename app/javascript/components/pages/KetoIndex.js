@@ -21,17 +21,17 @@ class KetoIndex extends Component {
         )
         })}
         <NavLink to ="/">
-          <Button id = "home-button" color="primary">Home</Button>      
+          <Button id = "home-button" color="success">Home</Button>      
         </NavLink>
       </Col>
       <NavLink to ="/recipe-gluten-free">
-      <Button id = "index-button" color="primary">Gluten-Free Listings </Button>      
+      <Button id = "keto-index-button" color="primary">Gluten-Free Listings </Button>      
       </NavLink>
       <NavLink to ="/recipe-med">
-      <Button id = "index-button" color="primary">Mediteranean Listings</Button>      
+      <Button id = "keto-index-button" color="primary">Mediteranean Listings</Button>      
       </NavLink>
       <NavLink to ="/recipe-vegan">
-      <Button id = "index-button" color="primary">Vegan Listings</Button>      
+      <Button id = "keto-index-button" color="primary">Vegan Listings</Button>      
       </NavLink>
 	  </>
     )

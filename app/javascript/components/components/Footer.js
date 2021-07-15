@@ -8,13 +8,13 @@ class Footer extends Component {
         <footer id ="footer">
         <Nav>
             <NavItem>
-                <NavLink to="/">Home Page</NavLink>
+                <NavLink className="footer-link" to="/">Home Page</NavLink>
             </NavItem>
             <NavItem>
-                <h6 id ="copyright">&copy; 2021 Cheese and Hackers</h6>
+                <h6 className="footer-link">&copy; 2021 Cheese and Hackers</h6>
             </NavItem>
             <NavItem>
-              <NavLink to="aboutus">About Us</NavLink>
+              <NavLink className="footer-link" to="aboutus">About Us</NavLink>
             </NavItem>
         </Nav>
         </footer>    

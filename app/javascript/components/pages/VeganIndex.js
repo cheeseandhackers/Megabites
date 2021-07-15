@@ -14,14 +14,14 @@ class VeganIndex extends Component {
         <Card body key={ recipe.id }>
           <CardTitle>
             <NavLink to={`/recipeshow/${recipe.id}`}>
-            <h4>{ recipe.title }</h4>
+            <h4> { recipe.title }</h4>
             </NavLink>
           </CardTitle>
         </Card>
         )
         })}
         <NavLink to ="/">
-          <Button id = "home-button" color="primary">Home</Button>      
+          <Button id = "home-button" color="success">Home</Button>      
         </NavLink>
       </Col>
       <NavLink to ="/recipe-gluten-free">
