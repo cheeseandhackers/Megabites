@@ -13,6 +13,7 @@ import {
 const Header = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
+
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   const { logged_in, sign_in_route, sign_out_route } = props;
@@ -38,6 +39,9 @@ const Header = (props) => {
             <NavItem>
               <NavLink to="aboutus">About Us</NavLink>
 
+            </NavItem>
+            <NavItem>
+              {logged_in && <NavLink to="/userrecipes">My Saved Recipes</NavLink>}
             </NavItem>
           </Nav>
         </Collapse>
