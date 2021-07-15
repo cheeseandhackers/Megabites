@@ -1,5 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
 import React, { useState } from "react";
+import logo from "../assets/logo.png";
 import {
   Collapse,
   Navbar,
@@ -12,20 +13,14 @@ import {
 const Header = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
-
-        
-        )
-    }
-}
   const toggleNavbar = () => setCollapsed(!collapsed);
-
 
   const { logged_in, sign_in_route, sign_out_route } = props;
   return (
     <div>
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="header-menu">
-          Header
+          <img className="logo" src={ logo }/>
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="hamburger-menu" />
         <Collapse isOpen={!collapsed} navbar>

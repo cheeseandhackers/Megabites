@@ -23,6 +23,18 @@ class RecipeIndex extends Component {
         <NavLink to ="/">
           <Button id = "home-button" color="success">Home</Button>      
         </NavLink>
+        <NavLink to ="/recipe-keto">
+      <Button id = "index-button" color="primary">Keto Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-med">
+      <Button id = "index-button" color="primary">Mediterranean Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-vegan">
+      <Button id = "index-button" color="primary">Vegan Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-gluten-free">
+      <Button id = "index-button" color="primary">Gluten-Free Listings</Button>      
+      </NavLink>
       </Col>
 	  </>
     )

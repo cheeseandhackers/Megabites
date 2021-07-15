@@ -21,7 +21,7 @@ class MedIndex extends Component {
         )
         })}
         <NavLink to ="/">
-          <Button id = "home-button" color="primary">Home</Button>      
+          <Button id = "home-button" color="success">Home</Button>      
         </NavLink>
       </Col>
       <NavLink to ="/recipe-gluten-free">
