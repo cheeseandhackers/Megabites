@@ -16,36 +16,36 @@ import VeganIndex from './pages/VeganIndex'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
-     recipes: [],
-     userrecipes: []
+      recipes: [],
+      userrecipes: []
     }
   }
-  componentDidMount(){
+  componentDidMount() {
     this.recipeIndex()
-    }
-  recipeIndex = () =>{
-    fetch("/recipes")
-    .then(response => response.json())
-    .then(recipeArray => this.setState({recipes: recipeArray}))
-    .catch(errors => console.log("index errors:", errors))
   }
-  
-  addRecipe = (userrecipe) =>{
+  recipeIndex = () => {
+    fetch("/recipes")
+      .then(response => response.json())
+      .then(recipeArray => this.setState({ recipes: recipeArray }))
+      .catch(errors => console.log("index errors:", errors))
+  }
+
+  addRecipe = (userrecipe) => {
     console.log(userrecipe)
     return fetch("/user_recipes.json", {
-      body: JSON.stringify(userrecipe), 
+      body: JSON.stringify(userrecipe),
       headers: {
         "Content-Type": "application/json"
       },
       method: "POST"
     })
-    .then(response => response.json())
-    .catch(errors => {
-      console.log("create errors:", errors)
-    })
+      .then(response => response.json())
+      .catch(errors => {
+        console.log("create errors:", errors)
+      })
   }
   deleteRecipe = (id) => {
     fetch(`/recipes/${id}`, {
@@ -54,9 +54,9 @@ class App extends React.Component {
       },
       method: "DELETE"
     })
-    .then(response => response.json)
-    .then(payload => this.recipeIndex())
-    .catch(errors => console.log("update errors", errors))
+      .then(response => response.json)
+      .then(payload => this.recipeIndex())
+      .catch(errors => console.log("update errors", errors))
   }
   render() {
     const {
@@ -73,39 +73,43 @@ class App extends React.Component {
             logged_in={logged_in}
           />
           <Switch>
-            <Route path="/recipe-gluten-free" render={ (props) => {
+            <Route path="/recipe-gluten-free" render={(props) => {
               let glutenFree = this.state.recipes.filter(value => value.diet_type === "Gluten Free")
-              return <GlutenIndex glutenFree = { glutenFree }/>
-            }}  />
-            <Route path="/recipe-keto" render={ (props) => {
+              return <GlutenIndex glutenFree={glutenFree} />
+            }} />
+            <Route path="/recipe-keto" render={(props) => {
               let keto = this.state.recipes.filter(value => value.diet_type === "Keto")
-              return <KetoIndex keto = { keto }/>
-            }}  />
-            <Route path="/recipe-med" render={ (props) => {
+              return <KetoIndex keto={keto} />
+            }} />
+            <Route path="/recipe-med" render={(props) => {
               let med = this.state.recipes.filter(value => value.diet_type === "Mediterranean")
-              return <MedIndex med = { med }/>
-            }}  /> 
-            <Route path="/recipe-vegan" render={ (props) => {
+              return <MedIndex med={med} />
+            }} />
+            <Route path="/recipe-vegan" render={(props) => {
               let vegan = this.state.recipes.filter(value => value.diet_type === "Vegan")
-              return <VeganIndex vegan = { vegan }/>
-            }}  /> 
-            <Route exact path="/" component={ Home } />
-            <Route path="/recipeindex" render={ (props) => <RecipeIndex recipe={ this.state.recipes } />} />
-            <Route path="/recipeedit" component={ RecipeEdit } />
-            <Route path="/recipeshow/:id" render={ (props) => { let id = props.match.params.id
-            let recipe = this.state.recipes.find(recipe => recipe.id === +id)
+              return <VeganIndex vegan={vegan} />
+            }} />
+            <Route exact path="/" component={Home} />
+            <Route path="/recipeindex" render={(props) => <RecipeIndex recipe={this.state.recipes} />} />
+            <Route path="/recipeedit" component={RecipeEdit} />
+            <Route path="/recipeshow/:id" render={(props) => {
+              let id = props.match.params.id
+              let recipe = this.state.recipes.find(recipe => recipe.id === +id)
 
-            return <RecipeShow recipe={ recipe } addRecipe={ this.addRecipe } logged_in={logged_in}/>  }} />
-            {logged_in && <Route path="/userrecipes" render={ (props) => <UserRecipes userrecipes={ this.state.userrecipes }/>} />}
-             <Route path="/aboutus" component={ AboutUs } />
+              return <RecipeShow {...props} recipe={recipe} addRecipe={this.addRecipe} logged_in={logged_in} />
+            }} />
+            {logged_in && <Route path="/userrecipes" render={(props) => <UserRecipes
+              {...props}
+              userrecipes={this.state.userrecipes} />} />}
+            <Route path="/aboutus" component={AboutUs} />
 
-            <Route component={ NotFound } />
+            <Route component={NotFound} />
           </Switch>
           <Footer />
         </Router>
-        
 
-        
+
+
       </>
     );
   }

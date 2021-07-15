@@ -15,7 +15,9 @@ class RecipeShow extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.addRecipe(this.props.recipe)
-
+    .then(() => {
+      this.props.history.push("/userrecipes")
+    })
   }
   
   
