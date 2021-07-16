@@ -7,11 +7,12 @@ class RecipeIndex extends Component {
     let { recipe } = this.props
     return (
 	  <>
-    <h2>All Diet Recipes</h2>
+    <h2 className="show">All Diet Recipes</h2>
+    
       <Col id="form">
         { recipe.map(recipe => {
         return (
-        <Card body key={ recipe.id }>
+        <Card body key={ recipe.id } className="recipe-index">
           <CardTitle>
             <NavLink to={`/recipeshow/${recipe.id}`}>
             <h4>{ recipe.title }</h4>
@@ -36,6 +37,7 @@ class RecipeIndex extends Component {
       <Button id = "index-button" color="primary">Gluten-Free Listings</Button>      
       </NavLink>
       </Col>
+      
 	  </>
     )
   }

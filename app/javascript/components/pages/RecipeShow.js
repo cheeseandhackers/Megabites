@@ -25,18 +25,19 @@ class RecipeShow extends Component {
   render(){
     return (
 	  <>
-      <h1>Your Recipe Information</h1>
+      <h2 className="show">Your Recipe Information</h2>
       <Col sm="6">
-        <Card body>
+        <Card body className="show-card">
           <CardTitle>{ this.props.recipe.title }!</CardTitle>
             <CardText>This is a { this.props.recipe.diet_type } diet and will take { this.props.recipe.ready_in_minutes } minutes to make. <br/> <br/> You will need these ingredients: { this.props.recipe.ingredients }.<br/> <br/>Instructions: {this.props.recipe.instructions }</CardText>
         </Card>
         {this.props.logged_in &&
-        <Button  onClick={this.handleSubmit}  id = "add-button" color = "success">Add recipe to your Saved Recipes</Button> }
+        <Button  onClick={this.handleSubmit}  className = "add-button" color = "success">Add recipe to your Saved Recipes</Button> }
       </Col>
       <NavLink to ="/recipeindex">
-      <Button id = "index-button" color="success">Recipe Listings </Button>      
+      <Button className="show-button" color="primary">Recipe Listings </Button>      
       </NavLink>
+    
 	  </>
     )
   }

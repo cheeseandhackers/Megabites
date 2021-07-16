@@ -7,11 +7,11 @@ class VeganIndex extends Component {
     let { vegan } = this.props
     return (
 	  <>
-      <h2>Vegan Diet Recipes</h2>
+      <h2 className="show">Vegan Diet Recipes</h2>
       <Col id="form">
         { vegan.map(recipe => {
         return (
-        <Card body key={ recipe.id }>
+        <Card body key={ recipe.id } className="recipe-index">
           <CardTitle>
             <NavLink to={`/recipeshow/${recipe.id}`}>
             <h4> { recipe.title }</h4>
