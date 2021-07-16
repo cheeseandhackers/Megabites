@@ -7,11 +7,11 @@ class KetoIndex extends Component {
     let { keto } = this.props
     return (
 	  <>
-      <h2>Keto Diet Recipes</h2>
+      <h2 className="show">Keto Diet Recipes</h2>
       <Col id="form">
         { keto.map(recipe => {
         return (
-        <Card body key={ recipe.id }>
+        <Card body key={ recipe.id } className="recipe-index">
           <CardTitle>
             <NavLink to={`/recipeshow/${recipe.id}`}>
             <h4>{ recipe.title }</h4>

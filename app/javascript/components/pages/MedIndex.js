@@ -7,11 +7,11 @@ class MedIndex extends Component {
     let { med } = this.props
     return (
 	  <>
-      <h2>Mediterranean Diet Recipes</h2>
+      <h2 className="show">Mediterranean Diet Recipes</h2>
       <Col id="form">
         { med.map(recipe => {
         return (
-        <Card body key={ recipe.id }>
+        <Card body key={ recipe.id } className="recipe-index">
           <CardTitle>
             <NavLink to={`/recipeshow/${recipe.id}`}>
             <h4>{ recipe.title }</h4>

@@ -7,11 +7,11 @@ class GlutenIndex extends Component {
     let { glutenFree } = this.props
     return (
 	  <>
-      <h2>Gluten-Free Diet Recipes</h2>
+      <h2 className="show">Gluten-Free Diet Recipes</h2>
       <Col id="form">
         { glutenFree.map(recipe => {
         return (
-        <Card body key={ recipe.id }>
+        <Card body key={ recipe.id } className="recipe-index">
           <CardTitle>
             <NavLink to={`/recipeshow/${recipe.id}`}>
             <h4>{ recipe.title }</h4>

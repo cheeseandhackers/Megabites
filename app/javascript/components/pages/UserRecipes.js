@@ -39,30 +39,27 @@ class UserRecipes extends Component {
   render() {
     let { userrecipes } = this.state
     return (
-
       <>
-        <h1>Your Saved Recipes</h1>
+        <h1 className="show">Your Saved Recipes</h1>
         <Col sm="6">
           {userrecipes.map(userrecipe => {
             return (
-              <Card body>
+              <div className="my-recipe-card">
+              <Card>
                 <CardTitle>
                   <NavLink to={`/recipeshow/${userrecipe.recipe_id}`}>
                     <h4>{userrecipe.recipe.title} </h4>
                   </NavLink>
-                  <Button onClick={ (e) => this.handleSubmit(e, userrecipe.id)} id = "delete-button" color = "danger">Remove Recipe From Your Page</Button>
+                  <Button onClick={ (e) => this.handleSubmit(e, userrecipe.id)}  className= "delete-button" color = "danger">Remove Recipe From Your Page</Button>
                 </CardTitle>
-                <CardText></CardText>
               </Card>
+              </div>
             )
           })}
-        </Col>
+        </Col>    
         <NavLink to="/recipeindex">
-          <Button id="index-button" color="success">Recipe Listings </Button>
+          <Button className="my-recipe-button" color="success">Recipe Listings </Button>
         </NavLink>
-
-
-
       </>
     )
   }

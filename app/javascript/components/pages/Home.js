@@ -10,19 +10,17 @@ import vegan from "../assets/vegan.jpeg"
 class Home extends Component {
   render() {
     return (
-      <>
-      <div className="jumbotron" >
-        <Jumbotron>
-          <h1>Welcome to MegaBite</h1>
-          <p>This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <>    
+        <Jumbotron className="jumbotron">
+          <h1 className="jumbotron-text">Welcome to MegaBites</h1>
+          <p className="jumbotron-small-text">The app where you can search diet specific recipes and save to your own dashboard after signing in or registering.</p>
+          <p className="jumbotron-small-text">Click the link below to explore all the recipes.</p>
           <p>
           <NavLink id = "home-button" to ="/recipeindex">
             <Button color="primary">Recipe List</Button>
           </NavLink>
           </p>
         </Jumbotron>
-        </div>
         <Col sm="5">
         <Card id="card">
           <CardImg top width="100%" src={ balanceDiet } />
