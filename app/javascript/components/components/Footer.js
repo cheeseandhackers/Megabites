@@ -6,12 +6,12 @@ class Footer extends Component {
     render () {
         return(
         <footer id ="footer">
-        <Nav>
-            <NavItem>
-                <NavLink className="footer-link" to="/">Home Page</NavLink>
+        <Nav className="footer-text">
+            <NavItem className="cheese-text">
+                <h6>&copy; 2021 Cheese and Hackers</h6>
             </NavItem>
             <NavItem>
-                <h6 className="footer-link">&copy; 2021 Cheese and Hackers</h6>
+                <NavLink className="footer-link" to="/">Home Page</NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="footer-link" to="aboutus">About Us</NavLink>
