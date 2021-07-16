@@ -24,7 +24,7 @@ class Home extends Component {
         </Jumbotron>
         </div>
         <Col sm="5">
-        <Card>
+        <Card id="card">
           <CardImg top width="100%" src={ balanceDiet } />
             <CardBody>
               <CardTitle tag="h5">Diets Backed By Science</CardTitle>

@@ -18,6 +18,12 @@ class UserRecipesController < ApplicationController
           end
       end
 
+      def destroy
+        @user_recipe = UserRecipe.find(params[:id])
+        @user_recipe.destroy
+        render json: @user_recipe
+      end
+
 
 private
     def user_recipe_params
