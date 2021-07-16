@@ -160,6 +160,33 @@ ingredients: "2 tbsp. extra virgin olive oil, 1/2 onion finely chopped, 4 cloves
 ready_in_minutes: 45,
 cooking_minutes: 15,
 diet_type: "Keto"
+},
+{
+  title: "The healthy, low-carb butter chicken salad",
+  image: "https://img.delicious.com.au/KESqxnLQ/del/2018/02/healthy-low-carb-butter-chicken-salad-74567-2.jpg",
+instructions: "Combine ¼ cup (70g) yoghurt, 1½ tbs tandoori paste, 1 tbs olive oil and 2 tsp garam masala in a baking dish and set aside. Place 2 chicken thighs on a chopping board. Insert 3 skewers through the thighs, then cut parallel to middle skewer to create 3 separate skewers. Repeat to create 12 skewers. Transfer skewers to marinade and, using your hands, toss until completely covered. Set aside for at least 30 minutes (chill if marinading for longer). Preheat oven grill to high and place a shelf in a lower position in oven. Line a second baking dish, narrower than the length of the skewers, with foil. Place skewers across prepared dish so chicken sits above base of dish. Place under grill and grill for 10 minutes or until slightly charred, then turn and grill for a further 5-10 minutes or until just cooked through and slightly charred. Meanwhile, combine onion, lemon juice, 1 tsp salt, sugar and remaining ½ tsp garam masala in a bowl and toss to combine. Set aside until needed. Place cucumber, chilli, curry leaves, if using, and coriander in a bowl and set aside until needed. Combine the remaining ½ cup (140g) yoghurt and 1 tbs tandoori paste in a bowl, mixing with a spoon to create a swirl effect. Spread across serving plates. Add drained pickled onion to cucumber salad and toss until well combined. Arrange on serving plates. Add skewers to plates and drizzle over a little of the cooking juices. Scatter with cashews and remaining chilli to serve.",
+ingredients: "3/4 cup greek yoghurt, 2.5 tbs tandoori paste, 1 tbs vegetable oil, 2.5 tsp garam masala, 8 chicken thighs, 1 red onion thinly sliced, juice of 1 lemon, 1/4 tsp caster sugar, lebanese cucumber sliced into rounds, small tomato, 2 thinly sliced green chili peppers,  2 tbs chopped curry leaves, i bunch cilantro choped, 1/3 cup chopped roasted cashews",
+ready_in_minutes: 60, 
+cooking_minutes: 45,
+diet_type: "Keto"
+},
+{
+  title: "Keto Bacon Sushi",
+  image: "https://hips.hearstapps.com/vidthumb/images/delish-keto-bacon-sushi-still004-1550590825.jpg",
+  instructions: "Preheat oven to 400º. Line a baking sheet with aluminum foil and fit it with a cooling rack. Lay bacon halves in an even layer and bake until slightly crisp but still pliable, 11 to 13 minutes. Meanwhile, cut cucumbers, carrots, and avocado into sections roughly the width of the bacon. When bacon is cool enough to touch, spread an even layer of cream cheese on each slice. Divide vegetables evenly between the bacon and place on one end. Roll up vegetables tightly.  Garnish with sesame seeds and serve.",
+  ingredients: "6 slices of bacon halved, 2 Persian cucumbers thinly sliced, 2 carrots thinly sliced, 1 avacado sliced, 4 ounces cream cheese, sesame seeds for garnish",
+  ready_in_minutes: 30,
+  cooking_minutes: 12,
+  diet_type: "Keto"
+},
+{
+  title: "Keto Burger Fat Bombs",
+  image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-200114-burger-fat-bombs-0197-landscape-pf-1580224608.jpg",
+instructions: "Preheat oven to 375° and grease a mini muffin tin with cooking spray. In a medium bowl, season beef with garlic powder, salt, and pepper.  Press 1 teaspoon beef evenly into the bottom of each muffin tin cup, completely covering the bottom. Place a piece of butter on top then press 1 teaspoon beef over butter to completely cover.  Place a piece of cheddar on top of meat in each cup then press remaining beef over cheese to completely cover.  Bake until meat is cooked through, about 15 minutes. Let cool slightly.  Carefully, use a metal offset spatula to release each burger from the tin. Serve with lettuce leaves, tomatoes, and mustard.",
+ingredients: "Vegetable cooking spray, 1 pound ground beef, 1/2 tsp garlic powder, kosher salt to taste, pepper to taste, 2 tbsp cold butter cut into 20 pieces, 2 ounces cheddar cheese cut into 20 pieces, 1 head iceberg lettuce, thinly sliced tomatoes, mustard for serving",
+ready_in_minutes: 30,
+cooking_minutes: 15,
+diet_type: "Keto"
 }
 ]
 recipes.each do |attributes|
