@@ -14,9 +14,6 @@ const Header = (props) => {
 
 
         
-        )
-    }
-}
   const toggleNavbar = () => setCollapsed(!collapsed);
 
 
