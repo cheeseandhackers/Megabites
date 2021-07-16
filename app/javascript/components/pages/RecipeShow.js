@@ -35,8 +35,11 @@ class RecipeShow extends Component {
         <Button  onClick={this.handleSubmit}  className = "add-button" color = "success">Add recipe to your Saved Recipes</Button> }
       </Col>
       <NavLink to ="/recipeindex">
-      <Button className="show-button" color="primary">Recipe Listings </Button>      
+      <Button className="show-button" color="primary">All Recipe Listings </Button>      
       </NavLink>
+      <NavLink to ="/userrecipes">
+          <Button className = "show-button" color = "primary">Your Saved Recipes</Button>
+      </NavLink>   
     
 	  </>
     )
