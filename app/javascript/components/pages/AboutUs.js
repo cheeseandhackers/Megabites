@@ -13,9 +13,9 @@ import {
 const AboutUs = (props) => {
   return (
     <div className="div-container">
+    <h2 className="show">About the Cheese and Hackers Team</h2>
       <Card className="about-cards">
         <CardImg
-          
           width="0%"
           height="700vw"
           src="/assets/Hex.png"

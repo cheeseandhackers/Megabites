@@ -56,10 +56,22 @@ class UserRecipes extends Component {
               </div>
             )
           })}
-        </Col>    
+        </Col> 
         <NavLink to="/recipeindex">
           <Button className="my-recipe-button" color="success">Recipe Listings </Button>
         </NavLink>
+        <NavLink to ="/recipe-keto">
+      <Button id = "index-button" color="primary">Keto Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-med">
+      <Button id = "index-button" color="primary">Mediterranean Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-vegan">
+      <Button id = "index-button" color="primary">Vegan Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-gluten-free">
+      <Button id = "index-button" color="primary">Gluten-Free Listings</Button>      
+      </NavLink>
       </>
     )
   }

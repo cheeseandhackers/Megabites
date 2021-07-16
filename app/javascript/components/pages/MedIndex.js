@@ -25,13 +25,13 @@ class MedIndex extends Component {
         </NavLink>
       </Col>
       <NavLink to ="/recipe-gluten-free">
-      <Button id = "index-button" color="primary">Gluten-Free Listings </Button>      
+      <Button className = "med-index-button" color="primary">Gluten-Free Listings </Button>      
       </NavLink>
       <NavLink to ="/recipe-keto">
-      <Button id = "index-button" color="primary">Keto Listings</Button>      
+      <Button className = "med-index-button" color="primary">Keto Listings</Button>      
       </NavLink>
       <NavLink to ="/recipe-vegan">
-      <Button id = "index-button" color="primary">Vegan Listings</Button>      
+      <Button className = "med-index-button" color="primary">Vegan Listings</Button>      
       </NavLink>
 	  </>
     )
