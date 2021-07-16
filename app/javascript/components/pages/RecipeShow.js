@@ -37,8 +37,20 @@ class RecipeShow extends Component {
       <NavLink to ="/recipeindex">
       <Button className="show-button" color="primary">All Recipe Listings </Button>      
       </NavLink>
-      <NavLink to ="/userrecipes">
+      {this.props.logged_in && <NavLink to ="/userrecipes">
           <Button className = "show-button" color = "primary">Your Saved Recipes</Button>
+      </NavLink>}
+      <NavLink to ="/recipe-keto">
+      <Button className = "show-button" color="primary">Keto Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-med">
+      <Button className = "show-button" color="primary">Mediterranean Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-vegan">
+      <Button className = "show-button" color="primary">Vegan Listings</Button>      
+      </NavLink>
+      <NavLink to ="/recipe-gluten-free">
+      <Button className = "show-button" color="primary">Gluten-Free Listings</Button>      
       </NavLink>   
     
 	  </>
