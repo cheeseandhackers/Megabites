@@ -12,8 +12,8 @@ import {
 
 const AboutUs = (props) => {
   return (
-    <div>
-      <Card>
+    <div className="div-container">
+      <Card className="about-cards">
         <CardImg
           
           width="0%"
@@ -33,7 +33,7 @@ const AboutUs = (props) => {
         </CardBody>
       </Card>
 
-      <Card>
+      <Card className="about-cards">
         <CardImg
           top
           width="100%"
@@ -52,7 +52,7 @@ const AboutUs = (props) => {
         </CardBody>
       </Card>
 
-      <Card>
+      <Card className="about-cards">
         <CardImg
           top
           width="100%"
@@ -67,11 +67,11 @@ const AboutUs = (props) => {
           <CardText>
             Hi, my name is Jonathan!
           </CardText>
-          <Button>Button</Button>
+          {/* <Button>Button</Button> */}
         </CardBody>
       </Card>
 
-      <Card>
+      <Card className="about-cards">
         <CardImg
           top
           width="100%"
@@ -86,7 +86,7 @@ const AboutUs = (props) => {
           <CardText>
            Hi, my name is Chris!
           </CardText>
-          <Button>Button</Button>
+          {/* <Button>Button</Button> */}
         </CardBody>
       </Card>
 
