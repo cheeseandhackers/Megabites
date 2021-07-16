@@ -25,7 +25,7 @@ const Header = (props) => {
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="hamburger-menu" />
         <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
+          <Nav navbar className="hamburger-links">
             <NavItem>
               {logged_in && <a href={sign_out_route}>Sign Out</a>}
               {!logged_in && <a href={sign_in_route}>Sign In</a>}
