@@ -9,7 +9,6 @@ import {
   Button,
   CardImgOverlay,
 } from "reactstrap";
-// import { NavLink } from 'react-router-dom'
 
 const AboutUs = (props) => {
   return (
@@ -33,7 +32,6 @@ const AboutUs = (props) => {
             systems and networks from information disclosure, theft or damage to
             hardware, software or electronic data.
           </CardText>
-          {/* <Button>Button</Button> */}
         </CardBody>
       </Card>
 
@@ -53,7 +51,6 @@ const AboutUs = (props) => {
             Mechanical Engineering from San Diego State University. I'm a golf
             fanatic, love sports and enjoy the outdoors with friends and family.
           </CardText>
-          {/* <Button>Button</Button> */}
         </CardBody>
       </Card>
 
@@ -70,7 +67,6 @@ const AboutUs = (props) => {
             Full Stack Developer
           </CardSubtitle>
           <CardText>
-            {" "}
             I am a full stack developer in training currently studying a number
             of programming languages and libraries seeking employment in the
             software development industry. I have a personal passion for
@@ -79,7 +75,6 @@ const AboutUs = (props) => {
             development, I thoroughly enjoy travel, movement, and trying any and
             all foods I can get my hands on.
           </CardText>
-          {/* <Button>Button</Button> */}
         </CardBody>
       </Card>
 
@@ -104,7 +99,6 @@ const AboutUs = (props) => {
             Round Rock Texas, and I love outdoor activities to include camping,
             hiking and fishing.
           </CardText>
-          {/* <Button>Button</Button> */}
         </CardBody>
       </Card>
     </div>
@@ -112,14 +106,3 @@ const AboutUs = (props) => {
 };
 
 export default AboutUs;
-
-// class AboutUs extends Component {
-//   render () {
-//       return(
-//       <>
-//         <h1>About Us</h1>
-//       </>
-
-//       )
-//   }
-// }
