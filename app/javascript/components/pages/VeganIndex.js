@@ -8,7 +8,7 @@ class VeganIndex extends Component {
     return (
 	  <>
       <h2 className="show">Vegan Diet Recipes</h2>
-      <Col id="form">
+      <Col sm="6">
         { vegan.map(recipe => {
         return (
         <Card body key={ recipe.id } className="recipe-index">
@@ -20,19 +20,24 @@ class VeganIndex extends Component {
         </Card>
         )
         })}
-        <NavLink to ="/">
-          <Button id = "home-button" color="success">Home</Button>      
-        </NavLink>
       </Col>
-      <NavLink to ="/recipe-gluten-free">
-      <Button id = "index-button" color="primary">Gluten-Free Listings </Button>      
-      </NavLink>
-      <NavLink to ="/recipe-med">
-      <Button id = "index-button" color="primary">Mediterranean Listings</Button>      
-      </NavLink>
-      <NavLink to ="/recipe-keto">
-      <Button id = "index-button" color="primary">Keto Listings</Button>      
-      </NavLink>
+      <div className="recipe-nav-links">
+        <NavLink to="/">
+          <Button className="nav-button" color="success">Home</Button>      
+        </NavLink>
+        {this.props.logged_in && <NavLink to ="/userrecipes">
+          <Button className="nav-button" color = "warning">Your Saved Recipes</Button>
+        </NavLink>}
+        <NavLink to="/recipe-gluten-free">
+          <Button className="nav-button" color="primary">Gluten-Free Listings </Button>      
+        </NavLink>
+        <NavLink to="/recipe-med">
+          <Button className="nav-button" color="primary">Mediterranean Listings</Button>      
+        </NavLink>
+        <NavLink to="/recipe-keto">
+          <Button className="nav-button" color="primary">Keto Listings</Button>      
+        </NavLink>
+      </div>
 	  </>
     )
   }
