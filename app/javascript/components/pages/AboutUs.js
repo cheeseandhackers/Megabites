@@ -1,4 +1,8 @@
 import React from "react";
+import Chris from "../assets/Chris.jpg"
+import Erik from "../assets/Erik.jpg"
+import Hex from "../assets/Hex.png"
+import Jonathan from "../assets/Jonathan.jpg"
 import {
   Card,
   CardImg,
@@ -15,7 +19,7 @@ const AboutUs = (props) => {
     <div className="div-container">
       <h2 className="show">About the Cheese and Hackers Team</h2>
       <Card className="about-cards">
-        <CardImg width="0%" height="700vw" src="/assets/Hex.png" alt="" />
+        <CardImg width="0%" height="700vw" src={Hex} alt="" />
         <CardBody>
           <CardTitle tag="h5">Hector Flores</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">
@@ -36,7 +40,7 @@ const AboutUs = (props) => {
       </Card>
 
       <Card className="about-cards">
-        <CardImg top width="100%" src="/assets/Erik.jpg" alt="Card image cap" />
+        <CardImg top width="100%" src={Erik} alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5">Erik Engstrom</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">
@@ -58,7 +62,7 @@ const AboutUs = (props) => {
         <CardImg
           top
           width="100%"
-          src="/assets/Jonathan.jpg"
+          src={Jonathan}
           alt="Card image cap"
         />
         <CardBody>
@@ -82,7 +86,7 @@ const AboutUs = (props) => {
         <CardImg
           top
           width="100%"
-          src="/assets/Chris.jpg"
+          src={Chris}
           alt="Card image cap"
         />
         <CardBody>
