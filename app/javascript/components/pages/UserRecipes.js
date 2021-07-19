@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card, CardTitle, CardText, Col, Button } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
+import noRecipe from "../assets/empty_recipes"
 
 class UserRecipes extends Component {
   constructor(props) {
@@ -16,8 +17,8 @@ class UserRecipes extends Component {
   handleSubmit = (e, userRecipeId) => {
     e.preventDefault()
     this.removeRecipe(userRecipeId)
-
   }
+
   userRecipes = () => {
     fetch("/user_recipes")
       .then(response => response.json())
@@ -38,40 +39,48 @@ class UserRecipes extends Component {
   }
   render() {
     let { userrecipes } = this.state
+    console.log(userrecipes)
     return (
       <>
         <h1 className="show">Your Saved Recipes</h1>
         <Col sm="6">
-          {userrecipes.map(userrecipe => {
+          {userrecipes.length > 0 && userrecipes.map(userrecipe => {
             return (
-              <div className="my-recipe-card">
-              <Card>
+              <Card key={ userrecipe.id }>
                 <CardTitle>
                   <NavLink to={`/recipeshow/${userrecipe.recipe_id}`}>
-                    <h4>{userrecipe.recipe.title} </h4>
+                    <h4>{userrecipe.recipe.title}</h4>
                   </NavLink>
-                  <Button onClick={ (e) => this.handleSubmit(e, userrecipe.id)}  className= "delete-button" color = "danger">Remove Recipe From Your Page</Button>
+                  <Button onClick={ (e) => this.handleSubmit(e, userrecipe.id)} className="delete-button" color="danger">
+                    Remove Recipe From Your Page
+                  </Button>
                 </CardTitle>
               </Card>
-              </div>
             )
           })}
-        </Col> 
-        <NavLink to="/recipeindex">
-          <Button className="my-recipe-button" color="success">Recipe Listings </Button>
-        </NavLink>
-        <NavLink to ="/recipe-keto">
-      <Button id = "index-button" color="primary">Keto Listings</Button>      
-      </NavLink>
-      <NavLink to ="/recipe-med">
-      <Button id = "index-button" color="primary">Mediterranean Listings</Button>      
-      </NavLink>
-      <NavLink to ="/recipe-vegan">
-      <Button id = "index-button" color="primary">Vegan Listings</Button>      
-      </NavLink>
-      <NavLink to ="/recipe-gluten-free">
-      <Button id = "index-button" color="primary">Gluten-Free Listings</Button>      
-      </NavLink>
+          </Col>
+          {userrecipes.length === 0 && 
+            <div className="empty-userrecipes">
+              <img className="no-recipe-pic" src={ noRecipe }/>
+            </div>
+          }
+        <div className="recipe-nav-links">
+          <NavLink to="/recipeindex">
+            <Button className="nav-button" color="success">Recipe Listings </Button>
+          </NavLink>
+          <NavLink to="/recipe-keto">
+            <Button className="nav-button" color="primary">Keto Listings</Button>      
+          </NavLink>
+          <NavLink to="/recipe-med">
+            <Button className="nav-button" color="primary">Mediterranean Listings</Button>      
+          </NavLink>
+          <NavLink to="/recipe-vegan">
+            <Button className="nav-button" color="primary">Vegan Listings</Button>      
+          </NavLink>
+          <NavLink to="/recipe-gluten-free">
+            <Button className="nav-button" color="primary">Gluten-Free Listings</Button>      
+          </NavLink>
+      </div>
       </>
     )
   }

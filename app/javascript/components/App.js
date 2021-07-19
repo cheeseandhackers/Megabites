@@ -75,22 +75,24 @@ class App extends React.Component {
           <Switch>
             <Route path="/recipe-gluten-free" render={(props) => {
               let glutenFree = this.state.recipes.filter(value => value.diet_type === "Gluten Free")
-              return <GlutenIndex glutenFree={glutenFree} />
+              return <GlutenIndex glutenFree={glutenFree} logged_in={logged_in} />
             }} />
             <Route path="/recipe-keto" render={(props) => {
               let keto = this.state.recipes.filter(value => value.diet_type === "Keto")
-              return <KetoIndex keto={keto} />
+              return <KetoIndex keto={keto} logged_in={logged_in} />
             }} />
             <Route path="/recipe-med" render={(props) => {
               let med = this.state.recipes.filter(value => value.diet_type === "Mediterranean")
-              return <MedIndex med={med} />
+              return <MedIndex med={med} logged_in={logged_in} />
             }} />
             <Route path="/recipe-vegan" render={(props) => {
               let vegan = this.state.recipes.filter(value => value.diet_type === "Vegan")
-              return <VeganIndex vegan={vegan} />
+              return <VeganIndex vegan={vegan} logged_in={logged_in} />
             }} />
-            <Route exact path="/" component={Home} />
-            <Route path="/recipeindex" render={(props) => <RecipeIndex recipe={this.state.recipes} />} />
+            <Route exact path="/" render={(props) => {
+              return <Home logged_in={logged_in}/>
+            }} />  
+            <Route path="/recipeindex" render={(props) => <RecipeIndex recipe={this.state.recipes} logged_in={logged_in} />} />
             <Route path="/recipeedit" component={RecipeEdit} />
             <Route path="/recipeshow/:id" render={(props) => {
               let id = props.match.params.id
