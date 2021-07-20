@@ -7,6 +7,7 @@ import keto from "..//assets/keto.jpeg"
 import mediterranian from "..//assets/mediteranean.jpeg"
 import vegan from "../assets/vegan.jpeg"
 
+
 class Home extends Component {
   render() {
     return (
