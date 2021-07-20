@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Card, CardTitle, CardText, Col, Button } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
-import noRecipe from "../assets/empty_recipes"
+import noRecipe from "../assets/empty_recipes.jpeg"
 
 class UserRecipes extends Component {
   constructor(props) {
