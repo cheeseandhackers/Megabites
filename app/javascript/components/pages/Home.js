@@ -6,6 +6,7 @@ import glutenFree from "..//assets/gluten-free.png"
 import keto from "..//assets/keto.jpeg"
 import mediterranian from "..//assets/mediteranean.jpeg"
 import vegan from "../assets/vegan.jpeg"
+// import home from "../assets/home.jpeg"
 
 class Home extends Component {
   render() {
