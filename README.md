@@ -28,6 +28,7 @@ Run these commands in terminal:
 8. `rails s`
 9. `open in preferred text editor`
 10. `open browser to localhost:3000/`
+11. click [link](https://shrouded-sierra-57341.herokuapp.com/) to open the Megabites app.
 
 ***
 
